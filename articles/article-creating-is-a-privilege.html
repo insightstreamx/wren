@@ -74,23 +74,23 @@
         <ul class="navbar-list">
 
           <li>
-            <a href="#home" class="navbar-link hover-1" data-nav-toggler>Home</a>
+            <a href="../index.html" class="navbar-link hover-1" data-nav-toggler>Home</a>
           </li>
 
           <li>
-            <a href="#topics" class="navbar-link hover-1" data-nav-toggler>Topics</a>
+            <a href="../index.html#topics" class="navbar-link hover-1" data-nav-toggler>Topics</a>
           </li>
 
           <li>
-            <a href="#featured" class="navbar-link hover-1" data-nav-toggler>Featured Post</a>
+            <a href="../index.html#featured" class="navbar-link hover-1" data-nav-toggler>Featured Post</a>
           </li>
 
           <li>
-            <a href="#recent" class="navbar-link hover-1" data-nav-toggler>Recent Post</a>
+            <a href="../index.html#recent" class="navbar-link hover-1" data-nav-toggler>Recent Post</a>
           </li>
 
           <li>
-            <a href="#" class="navbar-link hover-1" data-nav-toggler>Contact</a>
+            <a href="../index.html#" class="navbar-link hover-1" data-nav-toggler>Contact</a>
           </li>
 
         </ul>
@@ -146,18 +146,40 @@
 
  <article>
   <!-- ARTICLE HERO -->
+
+  
 <section class="article-hero">
 
   <div class="container">
 
+    <!-- TITLE -->
     <h1 class="article-title">
       Creating is a privilege but it’s also a gift
     </h1>
 
+    <!-- FEATURE IMAGE -->
+    <figure class="article-banner">
+
+      <img src="../assets/images/popular-post-1.jpg"
+           width="800"
+           height="400"
+           loading="lazy"
+           alt="Creating is a privilege but it’s also a gift"
+           class="img-cover">
+
+    </figure>
+
+    <!-- META INFO -->
     <div class="article-meta">
-      <span><ion-icon name="time-outline"></ion-icon> 15 mins read</span>
+
+      <span>
+        <ion-icon name="time-outline"></ion-icon>
+        15 mins read
+      </span>
+
       <span>• 15 April 2023</span>
       <span>• Reflection</span>
+
     </div>
 
   </div>
@@ -195,6 +217,8 @@
 
 </article>
 
+<br><br><br><br>
+
 
 <!-- POPULAR POSTS (simple reuse) -->
 <section class="popular-posts">
@@ -219,6 +243,22 @@
 
 </section>
 
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <div id="footer"></div>
+
+    <script>
+        fetch("../components/footer.html")
+        .then(res => res.text())
+        .then(html => {
+      document.getElementById("footer").innerHTML = html;
+        })
+      .catch(err => console.error("Footer load failed:", err));
+</script>
 
 
 <!-- BACK TO TOP -->
