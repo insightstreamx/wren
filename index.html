@@ -1272,7 +1272,7 @@
 
             <address class="footer-text address">
               Prajwal Kapileshwari <br>
-              Karnataka - 580032 <br>
+              Karnataka <br>
               India (Bharat)
             </address>
 
@@ -1411,26 +1411,9 @@
   <!-- 
     - custom js link
   -->
-  <script src="../assets/js/script.js"></script>
+  <script src="./assets/js/script.js"></script>
 
   
-   <!-- LOAD NAVBAR COMPONENT -->
-  <script>
-  fetch("./components/navbar.html")
-    .then(res => res.text())
-    .then(html => {
-      document.getElementById("navbar").innerHTML = html;
-
-      // IMPORTANT: re-run navbar JS after injection
-      if (typeof initNavbar === "function") {
-        initNavbar();
-      }
-    })
-    .catch(err => console.error("Navbar load failed:", err));
-</script>
-document.addEventListener("DOMContentLoaded", initNavbar);
-
-
   <!-- 
     - ionicon link
   -->
