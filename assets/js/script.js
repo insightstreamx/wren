@@ -152,3 +152,10 @@ document.addEventListener("DOMContentLoaded", () => {
   loadSidebar();
   loadFooter();
 });
+
+
+const track = document.querySelector(".quotes-track");
+
+if (track) {
+  track.innerHTML += track.innerHTML; // duplicates quotes for seamless loop
+}
