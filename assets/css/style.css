@@ -1389,7 +1389,7 @@ body.nav-active { overflow: hidden; }
 .article-title {
   font-size: 4.5rem;
   font-weight: 800;
-  line-height: 1.6;
+  line-height: 1.1;
   color: var(--text-alice-blue);
   text-align: center;
   margin-bottom: 5px;
