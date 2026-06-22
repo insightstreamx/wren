@@ -69,7 +69,7 @@
 
         <ul class="navbar-list">
           <li><a href="#" class="navbar-link hover-1" data-nav-toggler>Home</a></li>
-          <li><a href="#topics" class="navbar-link hover-1" data-nav-toggler>Topics</a></li>
+          <li><a href="#gallery" class="navbar-link hover-1" data-nav-toggler>Gallery</a></li>
           <li><a href="#featured" class="navbar-link hover-1" data-nav-toggler>Featured</a></li>
           <li><a href="#recent" class="navbar-link hover-1" data-nav-toggler>Recent</a></li>
           <li><a href="#contact" class="navbar-link hover-1" data-nav-toggler>Contact</a></li>
@@ -141,131 +141,92 @@
 
 
 
-
-
-      <!-- 
-        - #TOPICS
-      -->
-
-      <section class="topics" id="topics" aria-labelledby="topic-label">
+      <!-- #GALLERY -->
+      <section class="gallery section" id="gallery" aria-labelledby="gallery-label">
         <div class="container">
 
-          <div class="card topic-card">
+          <h2 class="headline headline-2 section-title" id="gallery-label">
+            <span class="span">Gallery</span>
+          </h2>
 
-            <div class="card-content">
+          <p class="section-text">
+            A visual collection of moments and experiences.
+          </p>
 
-              <h2 class="headline headline-2 section-title card-title" id="topic-label">
-                Hot topics
-              </h2>
+          <!-- SCROLLER WRAPPER  -->
+          <div class="gallery-scroller">
 
-              <p class="card-text">
-                Don't miss out on the latest news about Travel tips, Hotels review, Food guide...
-              </p>
+            <div class="gallery-track">
 
-              <div class="btn-group">
-                <button class="btn-icon" aria-label="previous" data-slider-prev>
-                  <ion-icon name="arrow-back" aria-hidden="true"></ion-icon>
-                </button>
+              <!-- ITEM 1 -->
+              <div class="gallery-card">
+                <figure class="img-holder">
+                  <img src="./assets/images/topic-1.png" class="img-cover">
+                </figure>
+                
+              </div>
 
-                <button class="btn-icon" aria-label="next" data-slider-next>
-                  <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
-                </button>
+              <!-- ITEM 2 -->
+              <div class="gallery-card">
+                <figure class="img-holder">
+                  <img src="./assets/images/topic-2.png" class="img-cover">
+                </figure>
+                
+              </div>
+
+              <!-- ITEM 3 -->
+              <div class="gallery-card">
+                <figure class="img-holder">
+                  <img src="./assets/images/topic-3.png" class="img-cover">
+                </figure>
+                
+              </div>
+
+              <!-- ITEM 4 -->
+              <div class="gallery-card">
+                <figure class="img-holder">
+                  <img src="./assets/images/topic-4.png" class="img-cover">
+                </figure>
+                
+              </div>
+
+              <!-- ITEM 5 -->
+              <div class="gallery-card">
+                <figure class="img-holder">
+                  <img src="./assets/images/topic-5.png" class="img-cover">
+                </figure>
+                
+              </div>
+
+              <!-- DUPLICATE FOR LOOP (important for smooth infinite scroll) -->
+              <div class="gallery-card">
+                <figure class="img-holder">
+                  <img src="./assets/images/topic-1.png" class="img-cover">
+                </figure>
+                
+              </div>
+
+              <div class="gallery-card">
+                <figure class="img-holder">
+                  <img src="./assets/images/topic-2.png" class="img-cover">
+                </figure>
+                
+              </div>
+
+              <div class="gallery-card">
+                <figure class="img-holder">
+                  <img src="./assets/images/topic-3.png" class="img-cover">
+                </figure>
+                
               </div>
 
             </div>
 
-            <div class="slider" data-slider>
-              <ul class="slider-list" data-slider-container>
-
-                <li class="slider-item">
-                  <a href="#" class="slider-card">
-
-                    <figure class="slider-banner img-holder" style="--width: 507; --height: 618;">
-                      <img src="./assets/images/topic-1.png" width="507" height="618" loading="lazy" alt="Sport"
-                        class="img-cover">
-                    </figure>
-
-                    <div class="slider-content">
-                      <span class="slider-title">Sport</span>
-
-                      <p class="slider-subtitle">38 Articles</p>
-                    </div>
-
-                  </a>
-                </li>
-
-                <li class="slider-item">
-                  <a href="#" class="slider-card">
-
-                    <figure class="slider-banner img-holder" style="--width: 507; --height: 618;">
-                      <img src="./assets/images/topic-2.png" width="507" height="618" loading="lazy" alt="Travel"
-                        class="img-cover">
-                    </figure>
-
-                    <div class="slider-content">
-                      <span class="slider-title">Travel</span>
-
-                      <p class="slider-subtitle">63 Articles</p>
-                    </div>
-
-                  </a>
-                </li>
-
-                <li class="slider-item">
-                  <a href="#" class="slider-card">
-
-                    <figure class="slider-banner img-holder" style="--width: 507; --height: 618;">
-                      <img src="./assets/images/topic-3.png" width="507" height="618" loading="lazy" alt="Design"
-                        class="img-cover">
-                    </figure>
-
-                    <div class="slider-content">
-                      <span class="slider-title">Design</span>
-
-                      <p class="slider-subtitle">78 Articles</p>
-                    </div>
-
-                  </a>
-                </li>
-
-                <li class="slider-item">
-                  <a href="#" class="slider-card">
-
-                    <figure class="slider-banner img-holder" style="--width: 507; --height: 618;">
-                      <img src="./assets/images/topic-4.png" width="507" height="618" loading="lazy" alt="Movie"
-                        class="img-cover">
-                    </figure>
-
-                    <div class="slider-content">
-                      <span class="slider-title">Movie</span>
-
-                      <p class="slider-subtitle">125 Articles</p>
-                    </div>
-
-                  </a>
-                </li>
-
-                <li class="slider-item">
-                  <a href="#" class="slider-card">
-
-                    <figure class="slider-banner img-holder" style="--width: 507; --height: 618;">
-                      <img src="./assets/images/topic-5.png" width="507" height="618" loading="lazy" alt="Lifestyle"
-                        class="img-cover">
-                    </figure>
-
-                    <div class="slider-content">
-                      <span class="slider-title">Lifestyle</span>
-
-                      <p class="slider-subtitle">78 Articles</p>
-                    </div>
-
-                  </a>
-                </li>
-
-              </ul>
-            </div>
-
           </div>
+          <br>
+          <a href="./pages/gallery.html" class="btn btn-secondary" style="display: block; width: fit-content; margin: 20px auto;">
+            <span class="span">Go to Gallery</span>
+          </a>
 
         </div>
       </section>
